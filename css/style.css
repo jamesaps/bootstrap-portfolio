@@ -7,10 +7,6 @@
     --link-color: #3C72FF;
 }
 
-a {
-    color: var(--link-color) !important;
-}
-
 #logo {
     background-color: var(--primary-color);
     color: var(--light-color);
