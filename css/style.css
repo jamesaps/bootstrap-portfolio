@@ -10,3 +10,13 @@
     background-color: var(--primary-color);
     color: var(--light-color);
 }
+
+ .navigation-item {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.navigation-item:hover {
+    color: var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
+}
