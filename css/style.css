@@ -29,3 +29,74 @@
     height: 300px;
     object-fit: scale-down;
 }
+
+.section-title h1 {
+    color: var(--primary-color);
+    border-bottom: 3px solid var(--primary-color);
+}
+
+.work-card {
+    border: 3px solid var(--primary-color);
+    transition: all 1s ease-out;
+    text-decoration: none;
+}
+
+.work-card:hover {
+    border: 3px solid var(--quaternary-color);
+    background-color: var(--quaternary-color);
+    transition: all 1s ease-in;
+}
+
+.work-card-image {
+    height: 150px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 0;
+    opacity: 0.5;
+    transition: all 1s ease-out;
+}
+
+.work-card:hover .work-card-image {
+    opacity: 1;
+    transition: all 1s ease-in;
+}
+
+.work-card-image-featured {
+    height: 250px;
+}
+
+.work-card-body {
+    border-top: 3px solid var(--primary-color);
+    transition: all 1s ease-out;
+}
+
+.work-card:hover .work-card-body {
+    border-top: 3px solid var(--quaternary-color);
+    transition: all 1s ease-in;
+}
+
+.work-detail {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    opacity: .75;
+    transition: all 1s ease-out;
+}
+
+.work-card:hover .work-detail {
+    background-color: var(--quaternary-color);
+    color: var(--primary-color);
+    transition: all 1s ease-in;
+}
+
+/* This media query repositions the borders on the section title from underneath the title to the right of it. Responsive borders are not supported natively in bootstrap (e.g. be-md-0) hence the need for this. */
+ 
+ @media only screen and (min-width : 992px) {
+    .section-title {
+        /*border-bottom: 0;*/
+        border-right: 3px solid var(--primary-color);
+    }
+
+    .section-title h1 {
+        border-bottom: none;
+    }
+ }
