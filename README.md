@@ -11,7 +11,7 @@ The site is designed with different device sizes in mind, with intuitive layouts
 
 On hover effects are used to create interest and establish a strong sense of visual hierarchy to guide the user in navigating important parts of the portfolio.
 
-![Website Screenshot](./assets/images/project-screenshot.png)
+![Website Screenshot](./images/project-screenshot.png)
 
 ## Installation
 
