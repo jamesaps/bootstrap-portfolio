@@ -37,7 +37,14 @@
 
 .work-card {
     border: 3px solid var(--primary-color);
+    transition: all 1s ease-out;
     text-decoration: none;
+}
+
+.work-card:hover {
+    border: 3px solid var(--quaternary-color);
+    background-color: var(--quaternary-color);
+    transition: all 1s ease-in;
 }
 
 .work-card-image {
@@ -59,7 +66,13 @@
 }
 
 .work-card-body {
-    border-top: 3px solid var(--primary-color)
+    border-top: 3px solid var(--primary-color);
+    transition: all 1s ease-out;
+}
+
+.work-card:hover .work-card-body {
+    border-top: 3px solid var(--quaternary-color);
+    transition: all 1s ease-in;
 }
 
 .work-detail {
