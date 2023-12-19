@@ -1,9 +1,9 @@
 :root {
-  --primary-color: #155263;
-  --secondary-color: #ff6f3c;
-  --tertiary-color: #ff9a3c;
-  --quaternary-color: #ffc93c;
-  --light-color: white;
+    --primary-color: #155263;
+    --secondary-color: #ff6f3c;
+    --tertiary-color: #ff9a3c;
+    --quaternary-color: #ffc93c;
+    --light-color: white;
 }
 
 #logo {
@@ -11,7 +11,7 @@
     color: var(--light-color);
 }
 
- .navigation-item {
+.navigation-item {
     color: var(--primary-color);
     border-bottom: 2px solid var(--primary-color);
 }
@@ -111,24 +111,57 @@
     color: RGB(199,22,16)
 }
 
+footer {
+    background-color: var(--quaternary-color);
+}
+
+#big-red-button:hover {
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2)
+}
+
+.hover-link {
+    text-decoration: none;
+}
+
+.hover-link-1:hover {
+    animation: random 2s infinite;
+}
+
+.hover-link-2 {
+    transform: scale(1);
+    transition: transform 0.3s ease-out;
+}
+
+.hover-link-2:hover {
+    transform: scale(1.5);
+    transition: transform 0s;
+}
 
 /* This media query repositions the borders on the section title from underneath the title to the right of it. Responsive borders are not supported natively in bootstrap (e.g. be-md-0) hence the need for this. */
- 
- @media only screen and (min-width : 768px) {
+
+@media only screen and (min-width : 768px) {
     .section-title {
         /*border-bottom: 0;*/
         border-right: 3px solid var(--primary-color);
     }
-
+    
     .section-title h1 {
         border-bottom: none;
     }
- }
+}
 
- /* This media query changes the object position of the main self photo to use object-position:right on larger screen sizes */
+/* This media query changes the object position of the main self photo to use object-position:right on larger screen sizes */
 
-  @media only screen and (min-width : 768px) {
+@media only screen and (min-width : 768px) {
     #james-image {
         object-position: right;
     }
-  }
+}
+
+@keyframes random {
+    15% { color: var(--primary-color); } 
+    30% { color: var(--secondary-color); } 
+    45% { color: var(--tertiary-color); } 
+    60% { color: var(--quaternary-color); }
+    75% { color: var(--light-color); }  
+}
