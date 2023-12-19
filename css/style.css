@@ -28,7 +28,7 @@
 #james-image {
     height: 300px;
     object-fit: scale-down;
-    object-position: right;
+    object-position: center;
 }
 
 .section-title h1 {
@@ -124,3 +124,11 @@
         border-bottom: none;
     }
  }
+
+ /* This media query changes the object position of the main self photo to use object-position:right on larger screen sizes */
+
+  @media only screen and (min-width : 768px) {
+    #james-image {
+        object-position: right;
+    }
+  }
