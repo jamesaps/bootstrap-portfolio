@@ -4,6 +4,11 @@
     --tertiary-color: #ff9a3c;
     --quaternary-color: #ffc93c;
     --light-color: white;
+    --link-color: #3C72FF;
+}
+
+a {
+    color: var(--link-color) !important;
 }
 
 #logo {
