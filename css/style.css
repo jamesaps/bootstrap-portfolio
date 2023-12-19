@@ -43,6 +43,7 @@ a {
 
 .work-card {
     border: 3px solid var(--primary-color);
+    color: var(--primary-color) !important;
     transition: all 1s ease-out;
     text-decoration: none;
 }
@@ -92,6 +93,8 @@ a {
     background-color: var(--quaternary-color);
     color: var(--primary-color);
     transition: all 1s ease-in;
+    opacity: 1;
+    box-shadow: -2px 2px 0px rgba(0, 0, 0, 0.2);
 }
 
 .contact-link {
