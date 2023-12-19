@@ -20,3 +20,12 @@
     color: var(--secondary-color);
     border-bottom: 2px solid var(--secondary-color);
 }
+
+#hero {
+    background-color: var(--quaternary-color);
+}
+
+#james-image {
+    height: 300px;
+    object-fit:scale-down;
+}
