@@ -89,9 +89,32 @@
     transition: all 1s ease-in;
 }
 
+.contact-link {
+    text-decoration: none;
+    transition: all 1s ease-out;
+}
+
+.contact-link:hover {
+    text-decoration: underline;
+    transition: all 1s ease-in;
+}
+
+.github-link:hover {
+    color: RGB(110, 84, 148);
+}
+
+.spotify-link:hover {
+    color: RGB(29, 185, 84);
+}
+
+.email-link:hover {
+    color: RGB(199,22,16)
+}
+
+
 /* This media query repositions the borders on the section title from underneath the title to the right of it. Responsive borders are not supported natively in bootstrap (e.g. be-md-0) hence the need for this. */
  
- @media only screen and (min-width : 992px) {
+ @media only screen and (min-width : 768px) {
     .section-title {
         /*border-bottom: 0;*/
         border-right: 3px solid var(--primary-color);
